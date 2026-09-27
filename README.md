@@ -57,7 +57,7 @@ The system employs a decoupled, edge-accelerated architecture:
     (Connection Pool + RLS)        (Verification OTP Delivery)
 ```
 
-For full details, see the [Architecture Documentation](docs/ARCHITECTURE.md).
+For full details, see the [Architecture Documentation](ARCHITECTURE.md).
 
 ---
 
@@ -74,7 +74,7 @@ For full details, see the [Architecture Documentation](docs/ARCHITECTURE.md).
 | **Email Service** | Nodemailer / SMTP | Automated transactional HTML verification emails with 6-digit OTP |
 | **Security Suite** | bcryptjs, Zod, Helmet, CORS, express-rate-limit | Layered defense across transport, sessions, routing, and data |
 
-For a complete breakdown including versions, see [Technology Stack](docs/TECHNOLOGY-STACK.md).
+For a complete breakdown including versions, see [Technology Stack](TECHNOLOGY-STACK.md).
 
 ---
 
@@ -90,7 +90,7 @@ The production platform was hardened through an extensive multi-tier security au
 * **Multi-Tier Rate Limiting**: Dedicated rate limits for general traffic, authentication endpoints, and OTP verification requests.
 * **Step-Up Verification**: Destructive administrative actions require administrator password confirmation.
 
-For details, see [Security Architecture](docs/SECURITY-ARCHITECTURE.md) and [Security Policy](SECURITY.md).
+For details, see [Security Architecture](SECURITY-ARCHITECTURE.md) and [Security Policy](SECURITY.md).
 
 ---
 
@@ -105,7 +105,7 @@ The frontend interface incorporates an original visual aesthetic:
   * *Inter* for crisp body copy
   * *JetBrains Mono* for IDs and numerical pricing
 
-For details, see [Design System Documentation](docs/DESIGN-SYSTEM.md).
+For details, see [Design System Documentation](DESIGN-SYSTEM.md).
 
 ---
 
@@ -118,9 +118,9 @@ For details, see [Design System Documentation](docs/DESIGN-SYSTEM.md).
 * **Quality Assurance**: Automated end-to-end integration tests (`db:test`), TypeScript strict type checking (`tsc --noEmit`), and Vite production builds.
 
 For more information, see:
-* [Deployment Overview](docs/DEPLOYMENT.md)
-* [Development Workflow](docs/DEVELOPMENT-WORKFLOW.md)
-* [Comprehensive Technical Report](docs/PROJECT-REPORT.md)
+* [Deployment Overview](DEPLOYMENT.md)
+* [Development Workflow](DEVELOPMENT-WORKFLOW.md)
+* [Comprehensive Technical Report](PROJECT-REPORT.md)
 
 ---
 
@@ -128,12 +128,12 @@ For more information, see:
 
 Detailed documentation files in this repository:
 
-* [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — System architecture, data flow, and components.
-* [`docs/TECHNOLOGY-STACK.md`](docs/TECHNOLOGY-STACK.md) — Complete technology list and library versions.
-* [`docs/SECURITY-ARCHITECTURE.md`](docs/SECURITY-ARCHITECTURE.md) — Multi-tier security engineering and defenses.
-* [`docs/DESIGN-SYSTEM.md`](docs/DESIGN-SYSTEM.md) — Cinematic Glassmorphism, typography, and motion design.
-* [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) — Cloud infrastructure, Vercel serverless, and domain setup.
-* [`docs/DEVELOPMENT-WORKFLOW.md`](docs/DEVELOPMENT-WORKFLOW.md) — Engineering processes, verification checks, and tooling.
-* [`docs/PROJECT-REPORT.md`](docs/PROJECT-REPORT.md) — The comprehensive technical architecture report.
+* [`ARCHITECTURE.md`](ARCHITECTURE.md) — System architecture, data flow, and components.
+* [`TECHNOLOGY-STACK.md`](TECHNOLOGY-STACK.md) — Complete technology list and library versions.
+* [`SECURITY-ARCHITECTURE.md`](SECURITY-ARCHITECTURE.md) — Multi-tier security engineering and defenses.
+* [`DESIGN-SYSTEM.md`](DESIGN-SYSTEM.md) — Cinematic Glassmorphism, typography, and motion design.
+* [`DEPLOYMENT.md`](DEPLOYMENT.md) — Cloud infrastructure, Vercel serverless, and domain setup.
+* [`DEVELOPMENT-WORKFLOW.md`](DEVELOPMENT-WORKFLOW.md) — Engineering processes, verification checks, and tooling.
+* [`PROJECT-REPORT.md`](PROJECT-REPORT.md) — The comprehensive technical architecture report.
 * [`SECURITY.md`](SECURITY.md) — Public responsible disclosure policy.
 
