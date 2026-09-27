@@ -1,10 +1,10 @@
 # SGS Creations — Architecture & Technical Case Study
 
 [![Live Website](https://img.shields.io/badge/Live_Site-sgscreations.in-00E5FF?style=flat&logo=google-chrome&logoColor=black)](https://www.sgscreations.in)
-[![Frontend](https://img.shields.io/badge/Frontend-React_19_|_Vite_6-61DAFB?style=flat&logo=react&logoColor=black)](docs/TECHNOLOGY-STACK.md)
-[![Backend](https://img.shields.io/badge/Backend-Node.js_|_Express_5-339933?style=flat&logo=node.js&logoColor=white)](docs/TECHNOLOGY-STACK.md)
-[![Database](https://img.shields.io/badge/Database-PostgreSQL_|_Supabase-4169E1?style=flat&logo=postgresql&logoColor=white)](docs/TECHNOLOGY-STACK.md)
-[![Security](https://img.shields.io/badge/Security-Hardened_|_RLS_Enabled-00C853?style=flat&logo=shield&logoColor=white)](docs/SECURITY-ARCHITECTURE.md)
+[![Frontend](https://img.shields.io/badge/Frontend-React_19_|_Vite_6-61DAFB?style=flat&logo=react&logoColor=black)](TECHNOLOGY-STACK.md)
+[![Backend](https://img.shields.io/badge/Backend-Node.js_|_Express_5-339933?style=flat&logo=node.js&logoColor=white)](TECHNOLOGY-STACK.md)
+[![Database](https://img.shields.io/badge/Database-PostgreSQL_|_Supabase-4169E1?style=flat&logo=postgresql&logoColor=white)](TECHNOLOGY-STACK.md)
+[![Security](https://img.shields.io/badge/Security-Hardened_|_RLS_Enabled-00C853?style=flat&logo=shield&logoColor=white)](SECURITY-ARCHITECTURE.md)
 
 ---
 

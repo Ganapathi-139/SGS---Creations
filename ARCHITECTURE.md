@@ -35,7 +35,7 @@ flowchart TD
     Middleware --> Controllers
     Controllers -->|"Parameterized SQL"| SupabaseDB
     Controllers -->|"SMTP via Nodemailer"| SMTPServer
-
+```
 
 ---
 
