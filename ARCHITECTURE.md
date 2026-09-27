@@ -10,32 +10,32 @@ flowchart TD
         UserBrowser["User Browser / Mobile Device"]
     end
 
-    subgraph EdgeRouting ["Edge & CDN Layer (Vercel)"]
+    subgraph EdgeRouting ["Edge & CDN Layer - Vercel"]
         EdgeCDN["Vercel Edge Network & Global CDN"]
-        StaticAssets["Static Assets (Vite HTML / CSS / JS)"]
-        ServerlessBridge["Serverless Function Bridge (/api/*)"]
+        StaticAssets["Static Assets - Vite HTML, CSS, JS"]
+        ServerlessBridge["Serverless Function Bridge - /api/*"]
     end
 
     subgraph BackendLayer ["Backend Application Layer"]
         ExpressApp["Express 5 REST API Engine"]
-        Middleware["Security & Auth Middleware (Helmet, CORS, Rate Limit, JWT)"]
-        Controllers["Domain Controllers (Auth, Projects, Plans, Creations, Admin)"]
+        Middleware["Security & Auth Middleware"]
+        Controllers["Domain Controllers"]
     end
 
     subgraph PersistenceLayer ["Data & External Services"]
-        SupabaseDB[("Supabase PostgreSQL\n(Connection Pool + RLS)")]
-        SMTPServer["SMTP Email Gateway\n(Transactional OTP Delivery)"]
+        SupabaseDB[("Supabase PostgreSQL - Pool & RLS")]
+        SMTPServer["SMTP Email Gateway - OTP Delivery"]
     end
 
-    UserBrowser -->|HTTPS Request| EdgeCDN
-    EdgeCDN -->|Route: Client Routes / Static| StaticAssets
-    EdgeCDN -->|Route: /api/*| ServerlessBridge
+    UserBrowser -->|"HTTPS Request"| EdgeCDN
+    EdgeCDN -->|"Client Routes & Static"| StaticAssets
+    EdgeCDN -->|"API Requests /api/*"| ServerlessBridge
     ServerlessBridge --> ExpressApp
     ExpressApp --> Middleware
     Middleware --> Controllers
-    Controllers -->|Parameterized SQL Queries| SupabaseDB
-    Controllers -->|SMTP Protocol (Nodemailer)| SMTPServer
-```
+    Controllers -->|"Parameterized SQL"| SupabaseDB
+    Controllers -->|"SMTP via Nodemailer"| SMTPServer
+
 
 ---
 
